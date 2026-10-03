@@ -8,5 +8,6 @@
     ./nvidia.nix
     ./users.nix
     ./packages.nix
+    ./gaming.nix
   ];
 }
