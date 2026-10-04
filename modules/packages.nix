@@ -3,6 +3,11 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.firefox.enable = true;
+  
+  programs.localsend = {
+  enable = true;
+  openFirewall = true;
+  };
 
   environment.systemPackages = with pkgs; [
     vim
@@ -10,7 +15,6 @@
     git
     vscode
     discord
-    localsend
     pfetch
   ];
 }
