@@ -14,5 +14,6 @@
     mangohud
     protonplus
     faugus-launcher
+    prismlauncher
   ];
 }
