@@ -10,5 +10,6 @@
     ./packages.nix
     ./gaming.nix
     ./flatpak.nix
+    ./autostart.nix
   ];
 }

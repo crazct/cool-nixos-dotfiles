@@ -9,5 +9,6 @@
     wget
     git
     vscode
+    discord
   ];
 }
