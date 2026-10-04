@@ -3,6 +3,7 @@
   imports = [
     ./modules/plasma.nix
     ./modules/papirus.nix
+    ./modules/zen-browser.nix
   ];
 
   #theming

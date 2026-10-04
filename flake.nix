@@ -15,10 +15,16 @@
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.home-manager.follows = "home-manager";
     };
+
+  zen-browser = {
+    url = "github:0xc000022070/zen-browser-flake/beta";
+    inputs.nixpkgs.follows = "nixpkgs";
+    inputs.home-manager.follows = "home-manager";
   };
+};
 
 
-	outputs = { self, nixpkgs, home-manager, plasma-manager, ... }: {
+	outputs = { self, nixpkgs, home-manager, plasma-manager, zen-browser, ... }: {
 		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
 			system = "x86_64-linux";
 			modules = [
@@ -27,9 +33,12 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.sharedModules = [ plasma-manager.homeModules.plasma-manager ];
+          home-manager.sharedModules = [
+            plasma-manager.homeModules.plasma-manager
+            zen-browser.homeModules.beta
+          ];
           home-manager.users.jake = import ./home/jake.nix;
-		  home-manager.backupFileExtension = "backup";
+		      home-manager.backupFileExtension = "backup";
         }
       		];
 		};
