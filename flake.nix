@@ -21,26 +21,30 @@
     inputs.nixpkgs.follows = "nixpkgs";
     inputs.home-manager.follows = "home-manager";
   };
+
+  chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
 };
 
 
-	outputs = { self, nixpkgs, home-manager, plasma-manager, zen-browser, ... }@inputs: {
-		nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
-			system = "x86_64-linux";
-			modules = [
+  outputs = { self, nixpkgs, home-manager, plasma-manager, zen-browser, ... }@inputs: {
+    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
+      modules = [
         ./configuration.nix
         home-manager.nixosModules.home-manager
+        inputs.chaotic.nixosModules.default
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
+          home-manager.backupFileExtension = "backup";
           home-manager.extraSpecialArgs = { inherit inputs; };
           home-manager.sharedModules = [
             plasma-manager.homeModules.plasma-manager
           ];
           home-manager.users.jake = import ./home/jake.nix;
-		      home-manager.backupFileExtension = "backup";
         }
-      		];
-		};
-	};	
+      ];
+    };
+  };
 }
