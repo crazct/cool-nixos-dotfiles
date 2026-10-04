@@ -9,6 +9,7 @@
     enable = true;
     packages = [
       "org.vinegarhq.Sober"
+      "io.github.screwys.Rufin"
     ];
   };
 
