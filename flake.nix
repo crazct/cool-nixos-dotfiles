@@ -23,10 +23,11 @@
   };
 
   chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+  nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 };
 
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, zen-browser, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, plasma-manager, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       specialArgs = { inherit inputs; };
@@ -34,6 +35,7 @@
         ./configuration.nix
         home-manager.nixosModules.home-manager
         inputs.chaotic.nixosModules.default
+        inputs.nix-flatpak.nixosModules.nix-flatpak
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;

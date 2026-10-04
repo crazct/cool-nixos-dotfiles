@@ -9,5 +9,6 @@
     ./users.nix
     ./packages.nix
     ./gaming.nix
+    ./flatpak.nix
   ];
 }
