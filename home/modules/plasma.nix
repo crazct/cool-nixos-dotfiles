@@ -4,6 +4,7 @@
     enable = true;
     workspace.colorScheme = "BreezeDark";
     configFile."kdeglobals"."General"."BrowserApplication".value = "zen-beta.desktop";
+    session.sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
 
     configFile = {
       baloofilerc.General.dbVersion = 2;
