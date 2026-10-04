@@ -3,6 +3,7 @@
   programs.plasma = {
     enable = true;
     workspace.colorScheme = "BreezeDark";
+    configFile."kdeglobals"."General"."BrowserApplication".value = "zen-beta.desktop";
 
     configFile = {
       baloofilerc.General.dbVersion = 2;
