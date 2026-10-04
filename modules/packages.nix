@@ -10,5 +10,6 @@
     git
     vscode
     discord
+    localsend
   ];
 }
