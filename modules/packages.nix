@@ -11,5 +11,6 @@
     vscode
     discord
     localsend
+    pfetch
   ];
 }

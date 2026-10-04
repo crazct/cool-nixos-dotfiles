@@ -11,5 +11,7 @@
     ./gaming.nix
     ./flatpak.nix
     ./autostart.nix
+    ./fish.nix
+    ./lact.nix
   ];
 }
