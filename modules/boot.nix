@@ -4,5 +4,5 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelParams = [ "nvidia-drm.fbdev=1" ];
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages_zen;
 }
