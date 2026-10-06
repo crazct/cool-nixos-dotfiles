@@ -10,6 +10,7 @@
     packages = [
       "org.vinegarhq.Sober"
       "io.github.screwys.Rufin"
+      "app.fluxer.Fluxer"
     ];
   };
 
