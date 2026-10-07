@@ -5,9 +5,10 @@
   "mouseAccelProfile": "flat",
   "controlCenterShowMicPercent": true,
   "appIdSubstitutions": [],
+  "iconThemeDark": "Papirus",
   "cursorSettings": {
     "theme": "Kitty",
-    "size": 24,
+    "size": 30,
     "niri": {
       "hideWhenTyping": false,
       "hideAfterInactiveMs": 0

@@ -5,5 +5,5 @@
 
 cursor {
     xcursor-theme "Kitty"
-    xcursor-size 24
+    xcursor-size 30
 }
