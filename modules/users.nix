@@ -5,5 +5,6 @@
     description = "jake";
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.fish;
+    homeMode = "751";
   };
 }
