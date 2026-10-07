@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs, ... }:
 {
   programs.niri.enable = true;
 
@@ -8,5 +8,10 @@
     enable = true;
     compositor.name = "niri";  # Or "hyprland" or "sway"
   };
+
+  environment.systemPackages = with pkgs; [
+    nautilus
+    ghostty
+  ];
 
 }

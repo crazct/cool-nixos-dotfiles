@@ -1,9 +1,10 @@
 { pkgs, ... }:
 {
   imports = [
-    ./modules/plasma.nix
+    #./modules/plasma.nix
     ./modules/papirus.nix
     ./modules/zen-browser.nix
+    ./modules/niriconfig.nix
   ];
 
   #theming
