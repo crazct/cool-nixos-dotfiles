@@ -16,5 +16,6 @@
     vscode
     discord
     pfetch
+    kitty
   ];
 }
