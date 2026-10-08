@@ -23,15 +23,6 @@
     }
   },
   "osdPowerProfileEnabled": true,
-  "connectedFrameBarStyleBackups": {
-    "default": {
-      "shadowIntensity": 0,
-      "squareCorners": false,
-      "attachToScreenEdge": false,
-      "gothCornersEnabled": false,
-      "borderEnabled": false
-    }
-  },
   "barConfigs": [
     {
       "id": "default",
@@ -137,6 +128,5 @@
     "hslLightness": 1,
     "valid": true
   },
-  "frameEnabled": true,
   "configVersion": 18
 }

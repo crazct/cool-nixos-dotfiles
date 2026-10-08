@@ -3,8 +3,8 @@
     ./boot.nix
     ./networking.nix
     ./locale.nix
-    #./desktops/kde.nix
-    ./desktops/niri.nix
+    ./desktops/kde.nix
+    #./desktops/niri.nix
     ./audio.nix
     ./nvidia.nix
     ./users.nix
